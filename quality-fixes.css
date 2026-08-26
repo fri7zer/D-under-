@@ -1,0 +1,30 @@
+/* Correctifs prioritaires : premier écran, séparation des thèmes, cadrage média. */
+.hero{min-height:clamp(560px,82svh,760px);padding-top:clamp(5.5rem,10vh,7rem);padding-bottom:2rem;justify-content:flex-start}.hero .reveal{opacity:1;transform:none}.hero-logo{width:min(44vw,610px);margin:1rem 0 .7rem}.hero h1{font-size:clamp(2.8rem,7.3vw,8rem)}.hero-bottom{margin-top:auto}
+
+/* Photographies plein cadre, pilotées par un point focal éditorial. */
+.artist-card.has-artist-photo:before{inset:0;background-size:cover;background-repeat:no-repeat;background-position:var(--artist-focal,50% 38%);transform:scale(1.015)}.artist-card.has-artist-photo:hover:before{transform:scale(1.06)}
+.profile-hero.has-profile-photo{background-size:cover;background-repeat:no-repeat;background-position:50% 34%;min-height:min(68vh,720px)}
+.release-card img,.latest-release img,.release-cover{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 50%;height:auto}.cover{aspect-ratio:1/1;background-size:cover!important;background-position:50% 50%!important;background-repeat:no-repeat!important}
+
+/* BLACK : aucune fuite bleue ou verte hors microsignature Cameroun. */
+html[data-theme="black"] body :where(a,button,label,input,.eyebrow,.section-kicker,.tag,.play-link,.index,.manifesto .green,.manifesto .muted,.card-copy p,.stories span,.video-wall p,.profile-hero p){color:#b9bcc2}
+html[data-theme="black"] :where(.music-tabs .active,.official-link,.play,.event-meta button){background:#b9bcc2;color:#090909;border-color:#b9bcc2}
+html[data-theme="black"] :where(.artist-card,.release-card,.track-list article,.feature,.event-poster,.join,.shuffle-button,.play-link){border-color:#303136}
+html[data-theme="black"] :where(.artist-card:hover,.release-card:hover){box-shadow:0 28px 75px #000,0 0 34px #c9ccd214}
+html[data-theme="black"] .artist-card.editorial-focus{border-color:#777a80}html[data-theme="black"] .track-list article.editorial-focus{box-shadow:inset 2px 0 #8e9197}
+html[data-theme="black"] :where(.theme-card-blue,.theme-card-green):before{filter:grayscale(1) brightness(.72)}html[data-theme="black"] :where(.theme-card-blue,.theme-card-green):hover:before{filter:grayscale(1) brightness(.9)}
+
+/* BLUE : les accents d’interface appartiennent uniquement au ciel bleu. */
+html[data-theme="blue"] :where(.eyebrow,.section-kicker,.tag,.play-link,.profile-hero p,.manifesto .green){color:#77afe5}
+html[data-theme="blue"] :where(.music-tabs .active,.official-link,.play){background:#77afe5;color:#031020;border-color:#77afe5}
+html[data-theme="blue"] .artist-card.editorial-focus{border-color:#5f94c8}html[data-theme="blue"] .track-list article.editorial-focus{box-shadow:inset 2px 0 #629bd3}
+html[data-theme="blue"] .theme-card-green:before{filter:grayscale(1) brightness(.7)}html[data-theme="blue"] .theme-card-green:hover:before{filter:grayscale(1) brightness(.9)}
+
+/* GREEN : zéro bleu, accents vert/or cohérents. */
+html[data-theme="green"] body :where(a,button,label,input,.eyebrow,.section-kicker,.tag,.play-link,.index,.profile-hero p){color:#d0a62d}
+html[data-theme="green"] .manifesto .green{color:#36a768}html[data-theme="green"] :where(.music-tabs .active,.official-link,.play){background:#d0a62d;color:#071109;border-color:#d0a62d}
+html[data-theme="green"] :where(.artist-card,.release-card,.track-list article,.feature,.event-poster,.join,.shuffle-button,.play-link){border-color:#34563f}html[data-theme="green"] .artist-card.editorial-focus{border-color:#a9882b}html[data-theme="green"] .track-list article.editorial-focus{box-shadow:inset 2px 0 #b38d28}
+html[data-theme="green"] .theme-card-blue:before{filter:grayscale(1) sepia(.35) brightness(.58)}html[data-theme="green"] .theme-card-blue:hover:before{filter:grayscale(1) sepia(.35) brightness(.76)}
+
+@media(max-width:920px){.hero{min-height:72svh;padding-top:5.2rem}.hero-logo{width:min(76vw,560px)}.hero h1{font-size:clamp(2.5rem,11vw,5.4rem)}.artist-card.has-artist-photo:before{background-position:var(--artist-focal-mobile,var(--artist-focal,50% 32%))}.profile-hero.has-profile-photo{background-position:50% 28%;min-height:58vh}}
+@media(max-width:560px){.hero{min-height:620px;max-height:none}.hero-logo{width:80vw;margin-top:.7rem}.hero-bottom{margin-top:1.5rem}.artist-card{min-height:68vh}.profile-hero.has-profile-photo{min-height:52vh}}

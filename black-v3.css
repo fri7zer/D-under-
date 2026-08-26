@@ -1,0 +1,27 @@
+/* D-UNDER V3 — 70% noir, bleu nuit atmosphérique. */
+:root{--bg:#020303;--panel:#080909;--ink:#f3f4f6;--muted:#858b94;--line:#1a1c20}
+body{background:#020303;color:var(--ink)}main>section{position:relative;background-color:#020303;color:var(--ink)}
+.hero:before{background:radial-gradient(circle at 72% 28%,rgba(14,42,77,.46),transparent 34%),linear-gradient(120deg,#000 18%,#050608 60%,#010101);z-index:-2}
+.manifesto,.now,.music,.originals,.editorial,.events,.community{background:linear-gradient(180deg,#020303,#050607 52%,#010101)}
+.discover{background:radial-gradient(circle at 12% 16%,rgba(15,46,83,.32),transparent 26%),#020303;color:#f5f7fb}.discover .section-head .intro{color:#9da6b3}.discover .section-kicker{color:#8db8e2}
+.about{background:radial-gradient(circle at 88% 15%,rgba(12,40,72,.26),transparent 25%),#030404;color:#f4f5f7}.about .section-kicker{color:#8db8e2}.about>h2 span{-webkit-text-stroke-color:#f2f4f67a}.about .pillars{border-color:#ffffff1c}.about .pillars p{color:#8e949c}
+.originals{background:#050606}.artist-modal{background:radial-gradient(circle at 75% 10%,rgba(17,48,85,.34),transparent 27%),#020303}.search-modal{background:#010202f5}.release-card{background:#070809;border-color:#202329}.artist-card{background-color:#050607;border-color:#20242a}.track-list article:hover{background:#090c10}.event-mystery{background:radial-gradient(circle at 50% 45%,rgba(20,54,96,.32),transparent 30%),linear-gradient(180deg,#010202,#04070d 60%,#010202)}
+
+/* Ciel profond : étoiles blanches et bleues, tailles et vitesses variées. */
+.hero::after,.manifesto::after,.now::after,.discover::after,.music::after,.events::after,.community::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;background-image:radial-gradient(circle,rgba(255,255,255,.68) 0 1px,transparent 1.5px),radial-gradient(circle,rgba(112,163,220,.35) 0 .8px,transparent 1.4px),radial-gradient(circle,rgba(255,255,255,.28) 0 1.4px,transparent 2px);background-size:137px 151px,223px 197px,347px 311px;background-position:13px 17px,71px 83px,139px 47px;opacity:.46;animation:deepSkyParallax 38s linear infinite;mask-image:linear-gradient(transparent 0,#000 14%,#000 88%,transparent)}
+.hero>* ,.manifesto>* ,.now>* ,.discover>* ,.music>* ,.events>* ,.community>*{position:relative;z-index:1}
+@keyframes deepSkyParallax{from{background-position:13px 17px,71px 83px,139px 47px}to{background-position:-67px 117px,111px 3px,49px 147px}}
+
+/* Éclats très rares, sans transformer l’interface en décor spatial. */
+.now:before,.music:before{content:"";position:absolute;width:28vw;height:28vw;border-radius:50%;background:rgba(20,55,96,.12);filter:blur(80px);pointer-events:none}.now:before{right:-10vw;top:12%}.music:before{left:-14vw;bottom:8%}
+
+@media(prefers-reduced-motion:reduce){.hero::after,.manifesto::after,.now::after,.discover::after,.music::after,.events::after,.community::after{animation:none}}
+
+/* Sélecteur de thème — le noir reste la version de référence. */
+.theme-control{display:flex;align-items:center;gap:.45rem;padding:.35rem .55rem;border:1px solid #ffffff25;border-radius:999px;background:#050606cc}.theme-control span{font-size:.58rem;text-transform:uppercase;letter-spacing:.1em;color:#aeb4bd}.theme-control select{border:0;outline:0;background:transparent;color:white;font:600 .65rem Inter,sans-serif;cursor:pointer}.theme-control option{background:#080909;color:white}.theme-control-mobile{display:none;margin-top:1.5rem;width:max-content}.theme-control-mobile select{font-size:.85rem}
+
+html[data-theme="blue"] body,html[data-theme="blue"] main>section{background-color:#030915}html[data-theme="blue"] .manifesto,html[data-theme="blue"] .now,html[data-theme="blue"] .music,html[data-theme="blue"] .originals,html[data-theme="blue"] .editorial,html[data-theme="blue"] .community{background:linear-gradient(180deg,#030915,#07152b 52%,#020711)}html[data-theme="blue"] .discover,html[data-theme="blue"] .about{background:radial-gradient(circle at 15% 12%,rgba(42,92,153,.34),transparent 32%),#050c1a}html[data-theme="blue"] .release-card,html[data-theme="blue"] .artist-card{background-color:#081329;border-color:#294567}html[data-theme="blue"] .topbar.compact{background:#030914ed}
+
+html[data-theme="green"] body,html[data-theme="green"] main>section{background-color:#020806}html[data-theme="green"] .manifesto,html[data-theme="green"] .now,html[data-theme="green"] .music,html[data-theme="green"] .originals,html[data-theme="green"] .editorial,html[data-theme="green"] .community{background:linear-gradient(180deg,#020806,#06140e 52%,#010504)}html[data-theme="green"] .discover,html[data-theme="green"] .about{background:radial-gradient(circle at 15% 12%,rgba(21,112,66,.27),transparent 32%),#030b07}html[data-theme="green"] .release-card,html[data-theme="green"] .artist-card{background-color:#06110c;border-color:#214b36}html[data-theme="green"] .topbar.compact{background:#020806ed}html[data-theme="green"] .section-kicker,html[data-theme="green"] .eyebrow{color:#62c78e}
+
+@media(max-width:920px){.theme-control-mobile{display:flex}}

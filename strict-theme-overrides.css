@@ -1,0 +1,13 @@
+/* Couleurs finales à forte spécificité : aucune fuite entre thèmes. */
+html[data-theme="black"] body .music-tabs .active,html[data-theme="black"] body .official-link,html[data-theme="black"] body .play,html[data-theme="black"] body .event-meta button{background:#b9bcc2!important;color:#080808!important;border-color:#b9bcc2!important}
+html[data-theme="black"] body :is(.eyebrow,.section-kicker,.tag,.play-link,.profile-hero p,.manifesto .green,.manifesto .muted,.community button,.search-modal label,.artist-card p,.release-card span){color:#b9bcc2!important}
+html[data-theme="black"] body :is(.artist-card,.release-card,.track-list article,.feature,.event-poster,.join,.shuffle-button,.play-link,.music-tabs button){border-color:#303136!important}
+html[data-theme="black"] body .track-list article:hover{background:#090909!important}
+
+html[data-theme="blue"] body .music-tabs .active,html[data-theme="blue"] body .official-link,html[data-theme="blue"] body .play{background:#77afe5!important;color:#031020!important;border-color:#77afe5!important}
+html[data-theme="blue"] body :is(.eyebrow,.section-kicker,.tag,.play-link,.profile-hero p,.manifesto .green,.community button,.search-modal label){color:#77afe5!important}
+
+html[data-theme="green"] body .music-tabs .active,html[data-theme="green"] body .official-link,html[data-theme="green"] body .play{background:#d0a62d!important;color:#071109!important;border-color:#d0a62d!important}
+html[data-theme="green"] body :is(.eyebrow,.section-kicker,.tag,.play-link,.profile-hero p,.community button,.search-modal label){color:#d0a62d!important}
+html[data-theme="green"] body .manifesto .green{color:#38a968!important}
+html[data-theme="green"] body :is(.artist-card,.release-card,.track-list article,.feature,.event-poster,.join,.shuffle-button,.play-link,.music-tabs button){border-color:#34563f!important}

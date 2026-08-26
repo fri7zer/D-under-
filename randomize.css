@@ -1,0 +1,18 @@
+.shuffle-button {
+  display: block;
+  margin: 0 0 1rem auto;
+  padding: .75rem 1rem;
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  font: 700 .68rem Inter, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  cursor: pointer;
+  transition: .25s;
+}
+.shuffle-button:hover {
+  color: #9ccaff;
+  border-color: #5b86b8;
+  transform: translateY(-2px);
+}

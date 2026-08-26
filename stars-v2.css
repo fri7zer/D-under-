@@ -1,0 +1,56 @@
+/* Étoiles supplémentaires : lumière éditoriale, sans surcharger l'interface. */
+.hero, .manifesto, .discover, .originals, .community {
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.hero::before, .manifesto::before, .discover::before,
+.originals::before, .community::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle at 8% 15%, rgba(226,234,244,.95) 0 1.2px, transparent 1.9px),
+    radial-gradient(circle at 17% 72%, rgba(255,255,255,.72) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 29% 32%, rgba(190,204,222,.66) 0 .9px, transparent 1.5px),
+    radial-gradient(circle at 39% 84%, rgba(235,242,250,.82) 0 1.4px, transparent 2px),
+    radial-gradient(circle at 53% 12%, rgba(255,255,255,.76) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 63% 63%, rgba(25,170,92,.44) 0 1.2px, transparent 2px),
+    radial-gradient(circle at 76% 27%, rgba(211,221,234,.8) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 88% 76%, rgba(255,255,255,.7) 0 1.1px, transparent 1.8px),
+    radial-gradient(circle at 95% 9%, rgba(230,238,248,.82) 0 1.3px, transparent 2px);
+  background-size: 310px 270px, 370px 330px, 290px 360px, 430px 310px,
+    340px 290px, 390px 350px, 280px 320px, 450px 370px, 330px 390px;
+  opacity: .78;
+  animation: dunderStarDrift 22s ease-in-out infinite alternate;
+}
+
+.hero::after, .discover::after, .originals::after {
+  content: "✦";
+  position: absolute;
+  right: 7%;
+  top: 18%;
+  z-index: -1;
+  color: rgba(225,234,245,.4);
+  font-size: clamp(1rem, 2vw, 2.1rem);
+  text-shadow: -24vw 18vh rgba(255,255,255,.2), -55vw 46vh rgba(204,216,232,.22), 3vw 50vh rgba(25,170,92,.16);
+  animation: dunderStarPulse 4.8s ease-in-out infinite;
+}
+
+@keyframes dunderStarDrift {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-10px, 8px, 0); }
+}
+
+@keyframes dunderStarPulse {
+  0%, 100% { opacity: .45; transform: scale(.92) rotate(0); }
+  50% { opacity: .9; transform: scale(1.08) rotate(9deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero::before, .manifesto::before, .discover::before,
+  .originals::before, .community::before,
+  .hero::after, .discover::after, .originals::after { animation: none; }
+}

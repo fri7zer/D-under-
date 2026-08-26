@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="D-UNDER, média culturel et plateforme de découverte dédiée au rap camerounais." />
+  <meta name="theme-color" content="#070907" />
+  <title>D-UNDER — La New Wave du rap camerounais</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="catalog.css" />
+  <link rel="stylesheet" href="visual-update.css" />
+  <link rel="stylesheet" href="randomize.css" />
+  <link rel="stylesheet" href="stars-v2.css" />
+  <link rel="stylesheet" href="identity-v2.css" />
+  <link rel="stylesheet" href="black-v3.css" />
+  <link rel="stylesheet" href="themes-final.css" />
+  <link rel="stylesheet" href="theme-selector.css" />
+  <link rel="stylesheet" href="quality-fixes.css" />
+  <link rel="stylesheet" href="hero-structural-fix.css" />
+  <link rel="stylesheet" href="strict-theme-overrides.css" />
+  <link rel="stylesheet" href="detail-refinements.css" />
+  <link rel="stylesheet" href="music-features.css" />
+  <link rel="stylesheet" href="mboa.css?v=6" />
+  <link rel="stylesheet" href="catalog-expansion.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#accueil" aria-label="D-UNDER — Accueil"><img data-theme-logo src="d-under-logo-transparent.png" alt="D-UNDER" fetchpriority="high" decoding="async" /></a>
+    <nav class="desktop-nav" aria-label="Navigation principale">
+      <a href="#decouvrir">Découvrir</a><a href="#musique">Musique</a><a href="#charts">Charts</a><a href="#originals">Originals</a><a href="#editorial">Éditorial</a><a href="#evenements">Événements</a>
+    </nav>
+    <div class="top-actions"><button class="theme-launcher" type="button" aria-haspopup="dialog"><span>◉</span><b data-theme-label>NOIR</b></button><div class="mboa-language" role="group" aria-label="Langue MBOA"><button data-mboa-lang="fr">FR</button><button data-mboa-lang="kamfranglais">KAM</button></div><button class="search-open" aria-label="Ouvrir la recherche">Rechercher</button><a class="join" href="#communaute">Rejoindre D-UNDER</a></div>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+  </header>
+
+  <nav id="mobile-menu" class="mobile-menu" aria-label="Navigation mobile">
+    <a href="#decouvrir">Découvrir</a><a href="#musique">Musique</a><a href="#charts">Charts</a><a href="#originals">Originals</a><a href="#editorial">Éditorial</a><a href="#evenements">Événements</a><a href="#communaute">Communauté</a><a href="#apropos">À propos</a>
+    <button class="theme-launcher theme-launcher-mobile" type="button" aria-haspopup="dialog"><span>◉</span><b data-theme-label>NOIR</b></button>
+    <div class="mboa-language mboa-language-mobile" role="group" aria-label="Langue MBOA"><button data-mboa-lang="fr">FRANÇAIS</button><button data-mboa-lang="kamfranglais">KAMFRANGLAIS</button></div>
+  </nav>
+
+  <main>
+    <section id="accueil" class="hero">
+      <div class="hero-glow"></div>
+      <div class="shooting-stars" aria-hidden="true"><i></i><i></i><i></i></div>
+      <p class="eyebrow reveal">DOUALA · CAMEROUN · 2026</p>
+      <img data-theme-logo class="hero-logo reveal" src="d-under-logo-transparent.png" alt="D-UNDER" fetchpriority="high" decoding="async" />
+      <h1 class="reveal">LA <span class="mboa-new"><i>N</i><i>E</i><i>W</i></span> WAVE<br><span>EST DÉJÀ LÀ<span class="mboa-star">★</span><span class="standard-period">.</span></span></h1>
+      <div class="hero-bottom reveal"><p>Média × Découverte × Culture × Événements</p><a href="#manifeste">Entrer dans l’underground <span>↓</span></a></div>
+    </section>
+
+    <section id="manifeste" class="manifesto section-pad">
+      <p class="section-kicker">Pourquoi D-UNDER</p>
+      <div class="manifest-lines">
+        <h2 class="reveal">DU TALENT<span class="mboa-star">★</span><span class="standard-period">.</span></h2>
+        <h2 class="reveal muted visibility-ghost">PAS ASSEZ<br>DE VISIBILITÉ<span class="mboa-star">★</span><span class="standard-period">.</span></h2>
+        <h2 class="reveal green"><span class="mboa-d">D</span>-<span class="mboa-under">UNDER</span><br>CHANGE ÇA<span class="mboa-star">★</span><span class="standard-period">.</span></h2>
+      </div>
+    </section>
+
+    <section class="now section-pad">
+      <div class="section-head"><div><p class="section-kicker">En ce moment</p><h2>MAINTENANT<br>SUR D-UNDER</h2></div><span class="index">FOCUS ÉDITORIAL</span></div>
+      <div id="featured-releases" class="release-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="focus" class="discover focus-section section-pad">
+      <div class="section-head"><div><p class="section-kicker">Sélection éditoriale tournante</p><h2>D-UNDER<br>FOCUS.</h2></div><p class="intro">Un favori de la rédaction rencontre trois voix issues de toute la scène. Cette sélection éditoriale change régulièrement et ne constitue pas un classement.</p></div>
+      <div id="artist-catalog" class="artist-strip" aria-live="polite"></div>
+    </section>
+
+    <section id="scene" class="scene-explorer section-pad">
+      <div class="section-head"><div><p class="section-kicker">Catalogue camerounais</p><h2>EXPLORE<br>THE SCENE.</h2></div><p class="intro">Une cartographie éditoriale administrable. Les catégories décrivent une trajectoire artistique, jamais une valeur ou un classement de popularité.</p></div>
+      <div id="scene-filters" class="scene-filters" role="group" aria-label="Filtrer la scène"></div>
+      <div class="scene-carousel-shell">
+        <div id="scene-grid" class="scene-grid" aria-live="polite" aria-label="Artistes de la scène camerounaise"></div>
+        <div class="scene-carousel-nav"><button id="scene-prev" type="button" aria-label="Artistes précédents">← <span>Précédents</span></button><p id="scene-page-status" aria-live="polite"></p><button id="scene-next" type="button" aria-label="Artistes suivants"><span>Suivants</span> →</button></div>
+      </div>
+    </section>
+
+    <section id="decouvrir" class="discover discovery-section section-pad">
+      <div class="section-head"><div><p class="section-kicker">Découverte</p><h2>CE QUI ARRIVE<br>ENSUITE.</h2></div><p class="intro">Une sélection renouvelée d'artistes à écouter et à suivre, choisie dans l'ensemble du catalogue vérifié D-UNDER.</p></div>
+      <div id="discovery-catalog" class="artist-strip" aria-live="polite"></div>
+    </section>
+
+    <section id="musique" class="music section-pad">
+      <p class="section-kicker">Musique</p><h2>LE SON DU<br>CAMEROUN.</h2>
+      <div class="music-tabs" role="tablist"><button class="active">Sorties</button><button>Cette semaine</button><button>Sélection D-UNDER</button><button>Tendances</button></div>
+      <div id="music-catalog" class="track-list" aria-live="polite"></div>
+    </section>
+
+    <section id="charts" class="charts section-pad">
+      <div class="section-head"><div><p class="section-kicker">Données, pas impressions</p><h2><span class="mboa-d">D</span>-<span class="mboa-under">UNDER</span><br>CHARTS<span class="mboa-star">★</span><span class="standard-period">.</span></h2></div><p class="intro">Les classements ne seront publiés qu'avec des données mesurables, autorisées et datées. Aucun chiffre n'est estimé.</p></div>
+      <div class="chart-tabs" role="tablist" aria-label="Type de classement"><button class="active" data-chart-tab="artists" role="tab" aria-selected="true">Top Artists</button><button data-chart-tab="tracks" role="tab" aria-selected="false">Top Tracks</button></div>
+      <div id="chart-panel" class="chart-panel" aria-live="polite"></div>
+      <details class="chart-method"><summary>Méthodologie et transparence</summary><p>La future position reposera uniquement sur des signaux autorisés et vérifiables : performance de streaming accessible, activité D-UNDER consentie et dynamique de sortie. La source, la période et la date de mise à jour accompagneront chaque édition. Sans données suffisantes, aucun rang ni mouvement n'est affiché.</p></details>
+    </section>
+
+    <section class="picks section-pad">
+      <div class="section-head"><div><p class="section-kicker">Choix de la rédaction</p><h2><span class="mboa-d">D</span>-<span class="mboa-under">UNDER</span><br>PICKS<span class="mboa-star">★</span><span class="standard-period">.</span></h2></div><p class="intro">Une sélection éditoriale assumée — distincte des classements de performance.</p></div>
+      <div id="editorial-picks" class="picks-grid"></div>
+    </section>
+
+    <section id="originals" class="originals section-pad">
+      <div class="section-head"><div><p class="section-kicker">Productions maison</p><h2><span class="mboa-d">D</span>-<span class="mboa-under">UNDER</span><br>ORIGINALS<span class="mboa-star">★</span><span class="standard-period">.</span></h2></div></div>
+      <div class="originals-teasers"><article><span>01</span><h3>INTERVIEWS</h3><p>COMING SOON<span class="mboa-ellipsis"><i>.</i><i>.</i><i>.</i></span><span class="standard-ellipsis">...</span></p></article><article><span>02</span><h3>PODCASTS</h3><p>COMING SOON<span class="mboa-ellipsis"><i>.</i><i>.</i><i>.</i></span><span class="standard-ellipsis">...</span></p></article></div>
+    </section>
+
+    <section id="editorial" class="editorial section-pad">
+      <div class="section-head"><div><p class="section-kicker">Éditorial</p><h2>COMPRENDRE<br>LA SCÈNE.</h2></div><a href="#">Toutes les histoires →</a></div>
+      <div class="stories"><article><span>Analyse</span><h3>Pourquoi l’écosystème compte autant que les artistes.</h3><p>8 min de lecture</p></article><article><span>Derrière la musique</span><h3>Beatmakers, ingénieurs et réalisateurs : les visages derrière le son.</h3><p>6 min de lecture</p></article><article><span>Opinion</span><h3>Construire la qualité avant de courir après la visibilité.</h3><p>5 min de lecture</p></article></div>
+    </section>
+
+    <section id="evenements" class="events section-pad">
+      <div class="event-poster event-mystery"><div class="shooting-stars" aria-hidden="true"><i></i><i></i><i></i></div><h2><span class="mboa-d">D</span>-<span class="mboa-under">UNDER</span> LIVE</h2><p>COMING SOON<span class="mboa-ellipsis"><i>.</i><i>.</i><i>.</i></span><span class="standard-ellipsis">...</span></p></div>
+    </section>
+
+    <section id="apropos" class="about section-pad culture-statement"><p class="section-kicker">Notre philosophie</p><h2>ON NE RACONTE PAS<br>LA <span class="mboa-culture">CULTURE</span><span class="mboa-star">★</span><span class="standard-period">.</span><br><span>ON LA FAIT AVANCER<span class="mboa-star">★</span><span class="standard-period">.</span></span></h2></section>
+
+    <section id="communaute" class="community section-pad"><p class="section-kicker">Communauté</p><h2><span>NOUS SOMMES</span><br><span class="dunder-pulse"><span class="mboa-d">D</span>-<span class="mboa-under">UNDER</span><span class="mboa-star">★</span><span class="standard-period">.</span></span></h2><p>Reçois les découvertes, contenus exclusifs et annonces d’événements avant tout le monde.</p><form><label class="sr-only" for="email">Adresse e-mail</label><input id="email" type="email" placeholder="TON ADRESSE E-MAIL" required><button type="submit">Rejoindre le mouvement →</button></form></section>
+
+    <section id="profile" class="music-connect section-pad">
+      <div><p class="section-kicker">Préférences</p><h2>CONNECT<br>YOUR MUSIC.</h2><p>Choisis le service que D-UNDER ouvrira en priorité. La connexion officielle des comptes sera activée uniquement via les flux d'autorisation des plateformes.</p></div>
+      <div class="connect-card"><div class="preference-control" role="group" aria-label="Plateforme d'écoute préférée"><button data-preference="spotify"><span class="service-icon spotify-icon" aria-hidden="true">●</span> Spotify</button><button data-preference="apple"><span class="service-icon apple-icon" aria-hidden="true">♪</span> Apple Music</button></div><div class="oauth-actions"><button type="button" disabled>Connect Spotify <small>BIENTÔT · OAUTH</small></button><button type="button" disabled>Connect Apple Music <small>BIENTÔT · AUTORISATION OFFICIELLE</small></button></div><p class="connect-note">D-UNDER ne demandera jamais ton mot de passe Spotify ou Apple.</p></div>
+    </section>
+  </main>
+
+  <footer><img data-theme-logo src="d-under-logo-transparent.png" alt="D-UNDER"><div class="footer-links"><a href="#decouvrir">Découvrir</a><a href="#musique">Musique</a><a href="#originals">Originals</a><a href="#editorial">Éditorial</a><a href="#evenements">Événements</a><a href="#apropos">À propos</a></div><div class="footer-bottom"><span>Instagram · TikTok · YouTube · X</span><span>© 2026 D-UNDER — CAMEROUN / AFRIQUE</span></div></footer>
+
+  <dialog class="search-modal"><button class="search-close" aria-label="Fermer">×</button><label for="global-search">SEARCH D-UNDER</label><input id="global-search" type="search" autocomplete="off" placeholder="Artistes, morceaux, projets…"><div id="search-results"><p>Commence à saisir pour explorer la culture.</p></div></dialog>
+  <dialog class="artist-modal"><button class="artist-close" aria-label="Fermer">×</button><div id="artist-profile"></div></dialog>
+  <dialog class="listen-dialog" aria-labelledby="listen-title"><button class="listen-close" aria-label="Fermer">×</button><p class="section-kicker">Écouter maintenant</p><h2 id="listen-title"></h2><p id="listen-artist"></p><div id="listen-services"></div><p class="listen-note">Seuls les liens exacts vérifiés sont proposés.</p></dialog>
+  <div class="mboa-language-notice" role="status" aria-live="polite"><strong>KAMFRANGLAIS</strong><span>Architecture prête · lexique officiel en attente</span></div>
+  <dialog class="theme-dialog" aria-labelledby="theme-title"><div class="theme-dialog-head"><div><span>ATMOSPHÈRES D-UNDER</span><h2 id="theme-title">CHOISIS TON UNIVERS.</h2></div><button class="theme-dialog-close" aria-label="Fermer">×</button></div><div class="theme-cards"><button class="theme-card theme-card-black" data-theme-choice="black"><span class="theme-preview-stars" aria-hidden="true"></span><small>DEEP BLACK × SILVER</small><strong>BLACK</strong><em><i></i><span data-active-label>CHOISIR</span></em></button><button class="theme-card theme-card-blue" data-theme-choice="blue"><span class="theme-preview-stars" aria-hidden="true"></span><small>MIDNIGHT BLUE × SILVER</small><strong>BLUE</strong><em><i></i><span data-active-label>CHOISIR</span></em></button><button class="theme-card theme-card-green" data-theme-choice="green"><span class="theme-preview-stars" aria-hidden="true"></span><small>GREEN × GOLD × CAMEROON</small><strong>MBOA</strong><em><i></i><span data-active-label>CHOISIR</span></em></button></div><p class="theme-dialog-note">Une identité. Trois atmosphères.</p></dialog>
+<script src="catalog.js?v=6"></script>
+<script src="media.js?v=7"></script>
+  <script src="script.js?v=8"></script>
+</body>
+</html>
