@@ -77,7 +77,7 @@ html[data-theme] :is(.shuffle-button,.join,.largage-copy a,.preview-button){bord
 
 
 /* Deterministic logo variants: applied before and after refresh on every viewport. */
-html[data-logo-variant="silver"] [data-theme-logo],.logo-silver{filter:grayscale(1) saturate(0) contrast(1.12) brightness(1.08)!important}
-html[data-logo-variant="blue"] [data-theme-logo],.logo-blue{filter:saturate(1.18) brightness(1.08)!important}
-html[data-logo-variant="green"] [data-theme-logo],.logo-green{filter:sepia(1) saturate(5.2) hue-rotate(78deg) brightness(.82) contrast(1.08)!important}
+html[data-logo-variant="silver"] [data-theme-logo]{content:url("d-under-logo-silver.png");filter:none!important}.logo-silver{filter:none!important}
+html[data-logo-variant="blue"] [data-theme-logo]{content:url("d-under-logo-transparent.png");filter:none!important}.logo-blue{filter:none!important}
+html[data-logo-variant="green"] [data-theme-logo]{content:url("d-under-logo.png");filter:none!important}.logo-green{filter:none!important}
 .theme-logo-preview{position:relative;z-index:2;width:min(180px,70%);height:54px;object-fit:contain;object-position:left center;margin-bottom:auto;transition:filter .25s ease,transform .25s ease}.theme-card:hover .theme-logo-preview{transform:translateY(-2px)}
