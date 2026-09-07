@@ -1,0 +1,2 @@
+import {cookie,methodAllowed,safeOrigin} from './_security.mjs';
+export default async request=>{if(!methodAllowed(request,['GET','POST']))return new Response(null,{status:405,headers:{Allow:'GET, POST'}});let location='/';try{location=safeOrigin(request)}catch{}return new Response(null,{status:302,headers:{Location:location,'Set-Cookie':cookie('dunder_session','',0),'Cache-Control':'no-store'}})};
